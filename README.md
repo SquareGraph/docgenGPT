@@ -12,7 +12,7 @@ The provided code consists of three main classes:
 
 ## Example Usage
 
-Here's how you can use the provided classes:
+Here's how you can use the provided classes. AutoDoc.generate_docstrings() will create a new directory, in a parent path of a given directory.
 
 ```python
 # Define the path to the directory containing Python files and the context
