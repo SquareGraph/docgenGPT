@@ -1,5 +1,7 @@
 
-# Documentation for the Code
+# DocgenGPT 0.2.0
+
+A handy way to autmatically create docstrings and markdowns
 
 ## Overview
 
@@ -77,3 +79,9 @@ This is an `Enum` class that defines three types of messages:
 #### Known issues in 0.2.0
 
 - Sometimes struggling with retrieval from vectorstore in longer context
+
+
+#### Scheduled work
+- Testing different databases
+- Adding function to create docstrings not in a QAretrieval way
+- Adding markdown generation
