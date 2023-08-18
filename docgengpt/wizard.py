@@ -1,3 +1,4 @@
+"""CLI interface for AutoDoc"""
 from pathlib import Path
 from .autodoc import AutoDoc
 

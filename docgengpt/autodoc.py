@@ -1,3 +1,5 @@
+"""Main class, AutoDoc and handy functions"""
+
 from pathlib import Path
 from enum import Enum
 from dataclasses import dataclass

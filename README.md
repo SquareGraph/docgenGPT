@@ -1,6 +1,5 @@
 
-# DocGenGPT - 0.2.0
-A simple package for automatic docstring generation
+# Documentation for the Code
 
 ## Overview
 
@@ -8,11 +7,12 @@ The provided code consists of three main classes:
 
 - `AutoDoc`: A class that automates the generation of docstrings for Python files.
 - `PyFile`: A dataclass that represents Python files, with methods to format answers and initialize some of its attributes.
-- `SystemMessage`: An enumeration that defines three types of system messages for.
+- `SystemMessage`: An enumeration that defines three types of system messages.
 
 ## Example Usage
 
-Here's how you can use the provided classes. AutoDoc.generate_docstrings() will create a new directory, in a parent path of a given directory.
+Quick look how it works. The output of the AutoDoc.generate_docstrings() is a directory with a new version of files. 
+It will be placed in the same root path as provided.
 
 ```python
 # Define the path to the directory containing Python files and the context
@@ -50,6 +50,7 @@ Methods:
 - `__get_docstrings()`: Gathers docstrings for the Python files.
 - `generate_docstrings()`: Generates docstrings and writes them to Python files in a new directory.
 
+
 ### PyFile
 
 Attributes:
@@ -65,7 +66,6 @@ Methods:
 - `format_answer()`: A method that formats the answer, taking into account code blocks.
 - `__post_init__()`: A post-initialization method that sets the name attribute of the instance based on the file path.
 
-
 ### SystemMessage
 
 This is an `Enum` class that defines three types of messages:
@@ -74,5 +74,6 @@ This is an `Enum` class that defines three types of messages:
 2. `docs`: A request to create docstrings and type hints for the provided code.
 3. `markdown`: A request to create a markdown file that describes the provided code.
 
+#### Known issues in 0.2.0
 
-
+- Sometimes struggling with retrieval from vectorstore in longer context
